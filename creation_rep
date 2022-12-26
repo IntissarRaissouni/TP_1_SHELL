@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Quel nom souhaitez-vous donner au répertoire ?"
+read nom_repertoire
+
+if [ -d $nom_repertoire ]; then
+    echo "Le répertoire $nom_repertoire existe déjà !"
+else
+    mkdir $nom_repertoire
+    echo "Le répertoire $nom_repertoire a été créé avec succès !"
+fi

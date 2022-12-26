@@ -1,0 +1,7 @@
+#!/bin/bash
+nomrep=$HOME/$1
+if [ -d $nomrep ]; then
+    echo "$1 existe sur mon compte"
+else
+    echo "$1 n'existe pas sur mon compte"
+fi
